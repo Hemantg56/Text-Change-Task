@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text-Change </title>
+    <style>
+        .abc {
+            color: red;
+            text-decoration: underline;
+        }
+        
+        .bcd {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="test">HELLO</h1>
+    <button onclick="tchange()">CHANGE</button>
+    <button onclick="tchange1()">CHANGE</button>
+    <script>
+        h1_tag = document.getElementById('test');
+        console.log(h1_tag);
+
+        function tchange() {
+            h1_tag.innerHTML = 'HEMANT'
+            h1_tag.classList.add('abc');
+        }
+
+        function tchange1() {
+            h1_tag.innerHTML = 'GADAGI'
+            h1_tag.classList.add('bcd');
+        }
+    </script>
+</body>
+
+</html>
